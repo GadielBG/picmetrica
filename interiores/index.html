@@ -1,367 +1,541 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Picmetrica</title>
-    <link rel="icon" href="imagenes/iconInterior.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
+    <title>Picmetrica Interiores - Diseño que Transforma Espacios</title>
+    <meta name="description" content="Especialistas en diseño de interiores en La Paz, Bolivia. Transformamos espacios con estilo, funcionalidad y personalidad única.">
     
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
-
 <body>
-
-    <header id="inicio" class="hero">
-        <nav id="menu_hero" class="nav container">
-            <div class="nav__logo">
-                <img src="imagenes/interiores.png" alt="" id="imagen_izq">
-            </div>
-
-            <ul class="nav__link nav__link--menu">
-                <li class="nav__items">
-                    <a href="../index.html" class="nav__links">Constructora</a>
-                </li>
-                <li class="nav__items">
-                    <a href="#ofrecer" class="nav__links">Acerca de</a>
-                </li>
-                <li class="nav__items">
-                    <a href="#contacto" class="nav__links">Contacto</a>
-                </li>
-                <li class="nav__items">
-                    <a href="#servicios" class="nav__links">Servicios</a>
-                </li>
-
-                <img src="imagenes/iconos/x.svg" class="nav__close">
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-palette"></i> Picmetrica Interiores
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#estilos" class="nav-link">Estilos</a></li>
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                <li><a href="../index.html" class="nav-link nav-link-special">
+                    <i class="fas fa-building"></i> Constructora
+                </a></li>
             </ul>
-
-            <div class="nav__menu">
-                <img src="imagenes/iconos/menu.svg" class="nav__img">
-            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
-
-        <section class="hero__container container">
-            <h1 class="hero__title">DISEÑANDO SUEÑOS CONSTRUYENDO REALIDADES</h1>
-            <p class="hero__paragraph">Construimos sueños con calidad excepcional. Cada proyecto es una muestra de pasión y compromiso 🏗️🌟</p>
-            <a href="#contacto" class="cta">Contactanos ahora</a>
-        </section>
     </header>
 
-    <main>
-        <section id="ofrecer" class="container about">
-            <h2 class="subtitle">¿Qué podemos ofrecerte?</h2>
-            <p class="about__paragraph">Nuestro grupo de profesionales capacitados y con años de experiencia en la industria se ponen a tu disposicion para garantizar un trabajo de calidad para tus proyectos</p>
-
-            <div class="about__main">
-                <article class="about__icons">
-                    <img src="imagenes/iconos/servicios.svg" class="about__icon">
-                    <h3 class="about__title">TODO TIPO DE ESPACIOS Y PROYECTOS </h3>
-                    <p class="about__paragrah">Transformamos cualquier espacio según tus necesidades y visión, combinando funcionalidad con estilo.
-                    </p>
-                </article>
-
-                <article class="about__icons">
-                    <img src="imagenes/iconos/calidad.svg" class="about__icon">
-                    <h3 class="about__title">CALIDAD Y GARANTÍA EN CADA PROYECTO </h3>
-                    <p class="about__paragrah">Ofrecemos Garantía real notariada de 1 año en cada proyecto, asegurando un acabado de gran calidad.
-                    </p>
-                </article>
-
-                <article class="about__icons">
-                    <img src="imagenes/iconos/variedad.svg" class="about__icon">
-                    <h3 class="about__title">VARIEDAD DE PROYECTOS EXITOSOS </h3>
-                    <p class="about__paragrah">Proyectos comerciales, familiares, residenciales y ejecutivos de gran calidad nos respaldan. Clientes felices y satisfechos son muestra de nuestro trabajo
-
-                    </p>
-                </article>
-                <article class="about__icons">
-                    <img src="imagenes/iconos/user.svg" class="about__icon">
-                    <h3 class="about__title">PERSONAL CON EXPERIENCIA Y EXPERTISE </h3>
-                    <p class="about__paragrah">Únicos con un equipo de profesionales altamente preparados y especializados en Diseño de Interiores.</p>
-                </article>
-            </div>
-        </section>
-
-        <section id="servicios" class="suenos">
-            <div class="suenos_container container">
-                <div class="suenos_text">
-                    <h2 class="subtitle">PARA ESOS MOMENTOS MÁGICOS 🌟</h2>
-                    <p class="suenos_paragraph">Lo lindo de la vida son esos momentos en los que podemos compartir haciendo lo que amamos con esas personas especiales. Y nosotros somos expertos en crear Espacios ideales para albergar esos momentos. ¿Qué esperas para tener tu propio Espacio Mágico? ✨</p>
-                    <a href="#contacto" class="cta">Realiza una cita</a>
-                </div>
-                <figure class="sueno_picture">
-                    <img src="imagenes/magico.jpg" class="sueno_img heartbeat">
-                </figure>
-            </div>
-        </section>
-        
-        <section class="suenos rtl">
-            <div class="suenos_container container">
-                <div class="suenos_text">
-                    <h2 class="subtitle">TU ESPACIO = TU ESTILO 🏡✨</h2>
-                    <p class="suenos_paragraph">Diseñamos tu espacio no solo buscando la Funcionalidad, sino que buscamos que tu #Estilo se vea reflejado en cada espacio. Trabajando de la mano contigo como parte fundamental del equipo 🫂⭐️</p>
-                    <a href="#contacto" class="cta">Realiza una cita</a>
-                </div>
-                <figure class="sueno_picture">
-                    <img src="imagenes/escencia.jpg" class="sueno_img heartbeat">
-                </figure>
-            </div>
-        </section>
-        
-        <section class="suenos">
-            <div class="suenos_container container">
-                <div class="suenos_text">
-                    <h2 class="subtitle">Bienvenidos al Espacio Transformado: Donde la Armonía y la Funcionalidad se Encuentran</h2>
-                    <p class="suenos_paragraph">Desde el primer trazo del lápiz hasta el último toque de decoración, cada elemento ha sido cuidadosamente seleccionado para narrar una historia única, una historia que celebra la belleza en todas sus formas y se adapta a las necesidades específicas de quienes lo habitan.</p>
-                    <a href="#contacto" class="cta">Realiza una cita</a>
-                </div>
-                <figure class="sueno_picture">
-                    <img src="imagenes/emociones.jpg" class="sueno_img heartbeat">
-                </figure>
-            </div>
-        </section>
-        
-        <section class="suenos rtl">
-            <div class="suenos_container container">
-                <div class="suenos_text">
-                    <h2 class="subtitle">¿Sabías que el Diseño de Interiores es mucho más que solo pinturas y cuadros?</h2>
-                    <p class="suenos_paragraph">esde el diseño hasta la implementación, cada proyecto es abordado con dedicación, creatividad y un nivel de detalle impecable. Nuestros diseñadores trabajan en armonía para transformar espacios comunes en lugares extraordinarios que reflejan tu estilo único y personalidad.
-
-                    No esperes más y haz realidad el hogar que siempre soñaste</p>
-                    <a href="#contacto" class="cta">Realiza una cita</a>
-                </div>
-                <figure class="sueno_picture">
-                    <img src="imagenes/pro.jpg" class="sueno_img heartbeat">
-                </figure>
-            </div>
-        </section>
-        
-
-        <section class="testimony">
-            <div class="testimony__container container">
-                <img src="imagenes/iconos/leftarrow.svg" class="testimony__arrow" id="before">
-
-                <section class="testimony__body testimony__body--show" data-id="1">
-                    <div class="testimony__texts">
-                        <h2 class="subtitle">Nuestros servicios, <span class="testimony__course">son los mejores del mercado</span></h2>
-                        <p class="testimony__review">- Diseño y planes arquitectonicos <br> - Entrega con llave en mano <br> - Obra gruesa
-                        <br>- Obra fina <br> - Gestión de permisos y tramites de construcción <br> - Estudio de viabilidad de proyectos</p>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Diseño que Transforma Espacios</h1>
+                    <p>Creamos ambientes únicos que reflejan tu personalidad y estilo de vida. Cada espacio cuenta una historia, y nosotros te ayudamos a escribir la tuya.</p>
+                    <div class="cta-buttons">
+                        <a href="#contacto" class="btn btn-primary">
+                            <i class="fas fa-palette"></i> Diseñar Mi Espacio
+                        </a>
+                        <a href="#proyectos" class="btn btn-secondary">
+                            <i class="fas fa-images"></i> Ver Galería
+                        </a>
+                        <a href="../principal/" class="btn btn-accent">
+                            <i class="fas fa-building"></i> Constructora
+                        </a>
                     </div>
-
-                    <figure class="testimony__picture">
-                        <img src="imagenes/servicios1.jpg" class="testimony__img">
-                    </figure>
-                </section>
-
-                <section class="testimony__body" data-id="2">
-                    <div class="testimony__texts">
-                        <h2 class="subtitle">Nuestros servicios,  <span class="testimony__course">son los mejores del mercado</span></h2>
-                        <p class="testimony__review">- Planificación de proyectos <br>- Diseño interior certificado <br>- Diseño de fachada
-                        <br>- Cálculo estructural <br>- Dirección y supervición de obra <br>- Relevamiento y medición de sitio</p>
-                    </div>
-
-                    <figure class="testimony__picture">
-                        <img src="imagenes/servicios2.jpg" class="testimony__img">
-                    </figure>
-                </section>
-
-                <section class="testimony__body" data-id="3">
-                    <div class="testimony__texts">
-                        <h2 class="subtitle">Nuestros servicios, , <span class="testimony__course">son los mejores del mercado</span></h2>
-                        <p class="testimony__review">- Planos eléctricos <br>- Planos sanitarios <br>- Planos hidráulicos
-                        <br>- Cómputo tecnico <br>- Gestión de proyectos BIM</p>
-                    </div>
-
-                    <figure class="testimony__picture">
-                        <img src="imagenes/servicios3.jpg" class="testimony__img">
-                    </figure>
-                </section>
-
-                
-
-                <img src="imagenes/iconos/rigtharrow.svg" class="testimony__arrow" id="next">
-            </div>
-        </section>
-
-        <section id="proyectos" class="container my-5 carousel-inner img">
-            <h2 class="text-center mb-4">Proyectos Realizados</h2>
-            <div class="owl-carousel owl-theme">
-              
-              <!-- Proyecto 1 -->
-              <div class="item">
-                <h5>CAFETERIA DG</h5>
-                <img src="imagenes/proyectos/Proyecto1/cafeteria1.png" alt="Proyecto 1 - Imagen 1">
-                <p>Descubre la Cafetería Durán Guevara, donde el arte del café se encuentra con un ambiente vanguardista. 
-                    Sumérgete en un espacio único que fusiona estilo contemporáneo con el placer de compartir momentos inolvidables.
-                </p>
-              </div>
-              <div class="item">
-                <h5>CAFETERIA DG</h5>
-                <img src="imagenes/proyectos/Proyecto1/cafeteria2.png" alt="Proyecto 1 - Imagen 2">
-                <p>Descubre la Cafetería Durán Guevara, donde el arte del café se encuentra con un ambiente vanguardista. 
-                    Sumérgete en un espacio único que fusiona estilo contemporáneo con el placer de compartir momentos inolvidables.
-                </p>
-              </div>
-              <div class="item">
-                <h5>CAFETERIA DG</h5>
-                <img src="imagenes/proyectos/Proyecto1/cafeteria3.png" alt="Proyecto 1 - Imagen 3">
-                <p>Descubre la Cafetería Durán Guevara, donde el arte del café se encuentra con un ambiente vanguardista. 
-                    Sumérgete en un espacio único que fusiona estilo contemporáneo con el placer de compartir momentos inolvidables.
-                </p>
-              </div>
-              <div class="item">
-                <h5>CAFETERIA DG</h5>
-                <img src="imagenes/proyectos/Proyecto1/cafeteria4.png" alt="Proyecto 1 - Imagen 4">
-                <p>Descubre la Cafetería Durán Guevara, donde el arte del café se encuentra con un ambiente vanguardista. 
-                    Sumérgete en un espacio único que fusiona estilo contemporáneo con el placer de compartir momentos inolvidables.
-                </p>
-              </div>
-              <div class="item">
-                <h5>CAFETERIA DG</h5>
-                <img src="imagenes/proyectos/Proyecto1/cafeteria5.png" alt="Proyecto 1 - Imagen 5">
-                <p>Descubre la Cafetería Durán Guevara, donde el arte del café se encuentra con un ambiente vanguardista. 
-                    Sumérgete en un espacio único que fusiona estilo contemporáneo con el placer de compartir momentos inolvidables.
-                </p>
-              </div>
-        
-              <!-- Proyecto 2 -->
-              <div class="item">
-                <h5>CASA COSSIO</h5>
-                <img src="imagenes/proyectos/Proyecto2/casa1.png" alt="Proyecto 2 - Imagen 1">
-                <p>
-                </p>
-              </div>
-              <div class="item">
-                <h5>CASA COSSIO</h5>
-                <img src="imagenes/proyectos/Proyecto2/casa2.png" alt="Proyecto 2 - Imagen 2">
-                <p>
-                </p>
-              </div>
-              <div class="item">
-                <h5>CASA COSSIO</h5>
-                <img src="imagenes/proyectos/Proyecto2/casa3.png" alt="Proyecto 2 - Imagen 3">
-                <p>
-                </p>
-              </div>
-              <div class="item">
-                <h5>CASA COSSIO</h5>
-                <img src="imagenes/proyectos/Proyecto2/casa4.png" alt="Proyecto 2 - Imagen 4">
-                <p>
-                </p>
-              </div>
-              <div class="item">
-                <h5>CASA COSSIO</h5>
-                <img src="imagenes/proyectos/Proyecto2/casa5.png" alt="Proyecto 2 - Imagen 5">
-                <p>
-                </p>
-              </div>
-        
-              <!-- Proyecto 3 -->
-              <div class="item">
-                <h5>OFICINAS BUBBA</h5>
-                <img src="imagenes/proyectos/Proyecto3/oficina1.jpeg" alt="Proyecto 3 - Imagen 1">
-                <p>Experimenta la excelencia en las Oficinas Bubba: espacios modernos y sofisticados,
-                    diseñados para potenciar la productividad y el éxito empresarial en un entorno profesional de primer nivel.
-                </p>
-              </div>
-              <div class="item">
-                <h5>OFICINAS BUBBA</h5>
-                <img src="imagenes/proyectos/Proyecto3/oficina2.jpeg" alt="Proyecto 3 - Imagen 2">
-                <p>Experimenta la excelencia en las Oficinas Bubba: espacios modernos y sofisticados,
-                    diseñados para potenciar la productividad y el éxito empresarial en un entorno profesional de primer nivel.
-                </p>
-              </div>
-              <div class="item">
-                <h5>OFICINAS BUBBA</h5>
-                <img src="imagenes/proyectos/Proyecto3/oficina3.jpeg" alt="Proyecto 3 - Imagen 3">
-                <p>Experimenta la excelencia en las Oficinas Bubba: espacios modernos y sofisticados,
-                    diseñados para potenciar la productividad y el éxito empresarial en un entorno profesional de primer nivel.
-                </p>
-              </div>
-              <div class="item">
-                <h5>OFICINAS BUBBA</h5>
-                <img src="imagenes/proyectos/Proyecto3/oficina4.jpeg" alt="Proyecto 3 - Imagen 4">
-                <p>Experimenta la excelencia en las Oficinas Bubba: espacios modernos y sofisticados,
-                    diseñados para potenciar la productividad y el éxito empresarial en un entorno profesional de primer nivel.
-                </p>
-              </div>
-              <div class="item">
-                <h5>OFICINAS BUBBA</h5>
-                <img src="imagenes/proyectos/Proyecto3/oficina5.jpeg" alt="Proyecto 3 - Imagen 5">
-                <p>Experimenta la excelencia en las Oficinas Bubba: espacios modernos y sofisticados,
-                    diseñados para potenciar la productividad y el éxito empresarial en un entorno profesional de primer nivel.
-                </p>
-              </div>
-            </div>
-          </section>
-        
-
-    <footer id="contacto" class="footer">
-        <section class="footer__container container">
-            <nav id="footer_menu" class="nav nav--footer">
-                <h2 class="footer__title">Picmetrica</h2>
-
-                <ul class="nav__link nav__link--footer">
-                    <li class="nav__items">
-                        <a href="#inicio" class="nav__links">Inicio</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#interiores" class="nav__links">Diseño de interiores</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="#servicios" class="nav__links">Servicios</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
-                <h2 class="footer__newsletter">Escribenos a nuestro EMAIL !</h2>
-                <div class="footer__inputs">
-                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
-                    <input type="submit" value="Registrate" class="footer__submit">
                 </div>
-            </form>
-        </section>
-
-        <section class="footer__copy container">
-            <div class="footer__social">
-                <a href="https://www.facebook.com/profile.php?id=100093213109371&locale=es_LA" class="footer__icons" target="_blank" title="facebook"><img src="imagenes/iconos/facebook.svg" class="footer__img"></a>
-                <a href="https://www.instagram.com/constructora.picmetrica?igsh=MWQwZ2c5NDFwbjc2bQ==" class="footer__icons" target="_blank" title="instagram"><img src="imagenes/iconos/instagram.svg" class="footer__img"></a>
-                <a href="https://www.tiktok.com/@interiores.picmetrica?_t=8olLoVgxe22&_r=1" class="footer__icons" target="_blank" title="youtube"><img src="imagenes/iconos/tiktok.svg" class="footer__img"></a>
-                <a href="https://wa.me/59163150418?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n.
-                " class="footer__icons" target="_blank" title="whatsapp"><img src="imagenes/iconos/whatsapp.svg" alt="Whatsapp" class="footer__img"></a>
+                <div class="hero-image">
+                    <img src="./imagenes/interiorFondo.avif" 
+                         alt="Diseño de interiores moderno" 
+                         class="lazy-image image-placeholder"
+                         loading="lazy">
+                </div>
             </div>
+        </div>
+    </section>
 
-            <h3 class="footer__copyright">Escribenos a nuestras redes sociales</h3>
-        </section>
+    <!-- Styles Section -->
+    <section id="estilos" class="styles">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Cuál es Tu Estilo?</h2>
+                <p>Descubre el estilo que mejor refleje tu personalidad y transformemos tu espacio</p>
+            </div>
+            <div class="styles-grid">
+                <div class="style-card">
+                    <div class="style-image">
+                        <img src="./imagenes/minimalista.jpg" 
+                             alt="Estilo Minimalista" 
+                             class="lazy-image image-placeholder"
+                             loading="lazy">
+                        <div class="style-overlay">
+                            <div class="style-icon">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="style-content">
+                        <h3>Minimalista</h3>
+                        <p>Menos es más. Líneas limpias, espacios abiertos y funcionalidad sin complicaciones para una vida serena y ordenada.</p>
+                        <ul class="style-features">
+                            <li><i class="fas fa-check"></i> Paleta neutra</li>
+                            <li><i class="fas fa-check"></i> Espacios despejados</li>
+                            <li><i class="fas fa-check"></i> Funcionalidad máxima</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="style-card">
+                    <div class="style-image">
+                        <img src="./imagenes/clasico.jpg" 
+                             alt="Estilo Clásico" 
+                             class="lazy-image image-placeholder"
+                             loading="lazy">
+                        <div class="style-overlay">
+                            <div class="style-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="style-content">
+                        <h3>Clásico</h3>
+                        <p>Elegancia atemporal con detalles refinados y materiales de calidad que nunca pasan de moda.</p>
+                        <ul class="style-features">
+                            <li><i class="fas fa-check"></i> Materiales nobles</li>
+                            <li><i class="fas fa-check"></i> Detalles ornamentales</li>
+                            <li><i class="fas fa-check"></i> Colores cálidos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="style-card">
+                    <div class="style-image">
+                        <img src="./imagenes/moderno.jpg" 
+                             alt="Estilo Moderno" 
+                             class="lazy-image image-placeholder"
+                             loading="lazy">
+                        <div class="style-overlay">
+                            <div class="style-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="style-content">
+                        <h3>Moderno</h3>
+                        <p>Innovación y tecnología integradas en diseños contemporáneos que maximizan el confort.</p>
+                        <ul class="style-features">
+                            <li><i class="fas fa-check"></i> Tecnología integrada</li>
+                            <li><i class="fas fa-check"></i> Líneas geométricas</li>
+                            <li><i class="fas fa-check"></i> Materiales innovadores</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Servicios de Diseño</h2>
+                <p>Servicios completos para transformar cada rincón de tu hogar</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class="fas fa-home"></i>
+                    <span>Diseño de salas y comedores</span>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-bed"></i>
+                    <span>Dormitorios y espacios de descanso</span>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-utensils"></i>
+                    <span>Cocinas funcionales y modernas</span>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-bath"></i>
+                    <span>Baños de lujo y relajación</span>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Oficinas y espacios de trabajo</span>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-baby"></i>
+                    <span>Habitaciones infantiles</span>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-couch"></i>
+                    <span>Selección de mobiliario</span>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-palette"></i>
+                    <span>Asesoría en colores y texturas</span>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>Diseño de iluminación</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Proyectos de Interiores</h2>
+                <p>Espacios transformados con nuestro toque personal</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Proyecto 1: Sala Moderna -->
+                <div class="project-card">
+                    <div class="project-carousel" data-project="1">
+                        <div class="carousel-container">
+                            <div class="carousel-slide active">
+                                <img src="./imagenes/proyectos/Proyecto1/cafeteria1.png" 
+                                     alt="Caferteria DG" 
+                                     class="lazy-image image-placeholder"
+                                     loading="lazy">
+                            </div>
+                            <div class="carousel-slide active">
+                                <img src="./imagenes/proyectos/Proyecto1/cafeteria2.png" 
+                                     alt="Caferteria DG" 
+                                     class="lazy-image image-placeholder"
+                                     loading="lazy">
+                            </div>
+                            <div class="carousel-slide active">
+                                <img src="./imagenes/proyectos/Proyecto1/cafeteria3.png" 
+                                     alt="Caferteria DG" 
+                                     class="lazy-image image-placeholder"
+                                     loading="lazy">
+                            </div>
+                            <div class="carousel-slide active">
+                                <img src="./imagenes/proyectos/Proyecto1/cafeteria4.png" 
+                                     alt="Caferteria DG" 
+                                     class="lazy-image image-placeholder"
+                                     loading="lazy">
+                            </div>
+                            <div class="carousel-slide active">
+                                <img src="./imagenes/proyectos/Proyecto1/cafeteria5.png" 
+                                     alt="Caferteria DG" 
+                                     class="lazy-image image-placeholder"
+                                     loading="lazy">
+                            </div>
+                            
+                        </div>
+                        <button class="carousel-btn carousel-prev" data-direction="prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn carousel-next" data-direction="next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <div class="carousel-indicators">
+                            <span class="indicator active" data-slide="0"></span>
+                            <span class="indicator" data-slide="1"></span>
+                            <span class="indicator" data-slide="2"></span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Cafeteria DG</h3>
+                        <p>Descubre la Cafetería Durán Guevara, donde el arte del café se encuentra con un ambiente vanguardista. 
+                    Sumérgete en un espacio único que fusiona estilo contemporáneo con el placer de compartir momentos inolvidables.</p>
+                        <div class="project-details">
+                            <span class="detail-tag">Estilo: Moderno</span>
+                            <span class="detail-tag">Área: 45 m²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2: Cocina Gourmet -->
+                <div class="project-card">
+                    <div class="project-carousel" data-project="2">
+                        <div class="carousel-container">
+                            <div class="carousel-slide active">
+                                <img src="./imagenes/proyectos/Proyecto2/casa1.png" 
+                                     alt="Casa COSSIO" 
+                                     class="lazy-image image-placeholder"
+                                     loading="lazy">
+                            </div>
+                            <div class="carousel-slide active">
+                                <img src="./imagenes/proyectos/Proyecto2/casa2.png" 
+                                     alt="Casa COSSIO" 
+                                     class="lazy-image image-placeholder"
+                                     loading="lazy">
+                            </div>
+                            <div class="carousel-slide active">
+                                <img src="./imagenes/proyectos/Proyecto2/casa3.png" 
+                                     alt="Casa COSSIO" 
+                                     class="lazy-image image-placeholder"
+                                     loading="lazy">
+                            </div>
+                            <div class="carousel-slide active">
+                                <img src="./imagenes/proyectos/Proyecto2/casa4.png" 
+                                     alt="Casa COSSIO" 
+                                     class="lazy-image image-placeholder"
+                                     loading="lazy">
+                            </div>
+                            <div class="carousel-slide active">
+                                <img src="./imagenes/proyectos/Proyecto2/casa5.png" 
+                                     alt="Casa COSSIO" 
+                                     class="lazy-image image-placeholder"
+                                     loading="lazy">
+                            </div>
+                            
+                        </div>
+                        <button class="carousel-btn carousel-prev" data-direction="prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn carousel-next" data-direction="next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <div class="carousel-indicators">
+                            <span class="indicator active" data-slide="0"></span>
+                            <span class="indicator" data-slide="1"></span>
+                            <span class="indicator" data-slide="2"></span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Casa COSSIO</h3>
+                        <p>Dormitorio principal con vestidor integrado y zona de relajación. Diseño elegante que combina comodidad y sofisticación en tonos cálidos.</p>
+                        <div class="project-details">
+                            <span class="detail-tag">Estilo: Contemporáneo</span>
+                            <span class="detail-tag">Área: 32 m²</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3: Dormitorio Principal -->
+                <div class="project-card">
+                    <div class="project-carousel" data-project="3">
+                        <div class="carousel-container">
+                            <div class="carousel-slide active">
+                                <img src="./imagenes/proyectos/Proyecto3/oficina1.jpeg" 
+                                     alt="Oficina BUBBA" 
+                                     class="lazy-image image-placeholder"
+                                     loading="lazy">
+                            </div>
+                            <div class="carousel-slide active">
+                                <img src="./imagenes/proyectos/Proyecto3/oficina2.jpeg" 
+                                     alt="Oficina BUBBA" 
+                                     class="lazy-image image-placeholder"
+                                     loading="lazy">
+                            </div>
+                            <div class="carousel-slide active">
+                                <img src="./imagenes/proyectos/Proyecto3/oficina3.jpeg" 
+                                     alt="Oficina BUBBA" 
+                                     class="lazy-image image-placeholder"
+                                     loading="lazy">
+                            </div>
+                            <div class="carousel-slide active">
+                                <img src="./imagenes/proyectos/Proyecto3/oficina4.jpeg" 
+                                     alt="Oficina BUBBA" 
+                                     class="lazy-image image-placeholder"
+                                     loading="lazy">
+                            </div>
+                            <div class="carousel-slide active">
+                                <img src="./imagenes/proyectos/Proyecto3/oficina5.jpeg" 
+                                     alt="Oficina BUBBA" 
+                                     class="lazy-image image-placeholder"
+                                     loading="lazy">
+                            </div>
+                            
+                        </div>
+                        <button class="carousel-btn carousel-prev" data-direction="prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn carousel-next" data-direction="next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <div class="carousel-indicators">
+                            <span class="indicator active" data-slide="0"></span>
+                            <span class="indicator" data-slide="1"></span>
+                            <span class="indicator" data-slide="2"></span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Oficina BUBBA</h3>
+                        <p>Experimenta la excelencia en las Oficinas Bubba: espacios modernos y sofisticados,
+                    diseñados para potenciar la productividad y el éxito empresarial en un entorno profesional de primer nivel.</p>
+                        <div class="project-details">
+                            <span class="detail-tag">Estilo: Clásico Moderno</span>
+                            <span class="detail-tag">Área: 38 m²</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Listo para Transformar tu Espacio?</h2>
+                <p>Contáctanos para una consulta personalizada y comencemos a diseñar el hogar de tus sueños</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Consulta de Diseño</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>La Paz, Bolivia</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+591 63091512</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>gerenciageneral@picmetrica.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Lun - Vie: 9:00 - 17:00</span>
+                    </div>
+                    <div class="consultation-note">
+                        <i class="fas fa-gift"></i>
+                        <p><strong>Primera consulta gratuita</strong><br>
+                        Visitamos tu espacio y te damos ideas iniciales sin costo.</p>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/xyzgjdbe" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    <div class="form-group">
+                        <label for="espacio">Tipo de Espacio</label>
+                        <select id="espacio" name="espacio">
+                            <option value="">Selecciona un espacio</option>
+                            <option value="sala">Sala de Estar</option>
+                            <option value="cocina">Cocina</option>
+                            <option value="dormitorio">Dormitorio</option>
+                            <option value="bano">Baño</option>
+                            <option value="oficina">Oficina</option>
+                            <option value="completo">Casa Completa</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="estilo">Estilo Preferido</label>
+                        <select id="estilo" name="estilo">
+                            <option value="">Selecciona un estilo</option>
+                            <option value="minimalista">Minimalista</option>
+                            <option value="clasico">Clásico</option>
+                            <option value="moderno">Moderno</option>
+                            <option value="industrial">Industrial</option>
+                            <option value="bohemio">Bohemio</option>
+                            <option value="escandinavo">Escandinavo</option>
+                            <option value="no_seguro">No estoy seguro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="presupuesto">Presupuesto Aproximado</label>
+                        <select id="presupuesto" name="presupuesto">
+                            <option value="">Selecciona un rango</option>
+                            <option value="hasta_5000">Hasta $5,000</option>
+                            <option value="5000_10000">$5,000 - $10,000</option>
+                            <option value="10000_20000">$10,000 - $20,000</option>
+                            <option value="20000_mas">$20,000 o más</option>
+                            <option value="consultar">Prefiero consultar</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Cuéntanos sobre tu proyecto</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Describe tu espacio actual, tus ideas, inspiraciones o cualquier detalle que nos ayude a entender mejor tu visión..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <i class="fas fa-magic"></i> Solicitar Consulta Gratuita
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Picmetrica Interiores</h4>
+                    <p>Transformamos espacios, creamos experiencias. Cada diseño cuenta una historia única que refleja tu personalidad.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul class="footer-list">
+                        <li>Diseño de Interiores</li>
+                        <li>Decoración Personalizada</li>
+                        <li>Consultoría de Estilo</li>
+                        <li>Mobiliario a Medida</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul class="footer-list">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#estilos">Estilos</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="../index.html">Constructora</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100093213109371&locale=es_LA" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/constructora.picmetrica?igsh=MWQwZ2c5NDFwbjc2bQ==" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@interiores.picmetrica?_t=8olLoVgxe22&_r=1" class="social-link">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/59163150418?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n." class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Picmetrica Interiores. Todos los derechos reservados.</p>
+            </div>
+        </div>
     </footer>
 
-     <!-- Scripts de Owl Carousel -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $(".owl-carousel").owlCarousel({
-        items: 1,
-        loop: true,
-        margin: 10,
-        nav: true,
-        dots: true,
-        autoplay: true,
-        autoplayTimeout: 5000,
-        autoplayHoverPause: true
-      });
-    });
-  </script>
+    <!-- Floating CTA Button -->
+    <button class="floating-cta" id="floatingCta">
+        <i class="fab fa-whatsapp"></i> Consulta
+    </button>
 
-    <script src="./js/slider.js"></script>
-    <script src="./js/menu.js"></script>
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
+    <!-- Link to external JavaScript -->
+    <script src="./js/script.js"></script>
 </body>
-
 </html>
